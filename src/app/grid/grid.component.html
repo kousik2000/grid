@@ -1,0 +1,12 @@
+<div class="bg-container">
+<!-- <nav style="background-color: skyblue;height:60px;padding:10px 30px; display: flex;justify-content: flex-end; align-items:center;">
+    <button mat-button mat-raised-button color="primary" style="background-color:blue;color:white;" (click)="toggleFullScreen()">Toggle Fullscreen</button> 
+</nav> -->
+<div class="grid-container" #videoContainer>
+    <div class="grid-item" *ngFor="let link of youtubeLinks">
+        <div class="video-container">
+            <iframe [src]="link" frameborder="0" allow='autoplay' allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+</div>
